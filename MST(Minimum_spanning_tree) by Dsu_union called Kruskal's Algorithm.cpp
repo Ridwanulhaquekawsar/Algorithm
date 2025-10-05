@@ -43,8 +43,10 @@ void do_this(){
     
     int min_cost=0; cout<<'\n'<<'\n';
     for(auto &[a,b,c] : edge_list){
-        leader1=find(a),leader2=find(b); if(leader1!=leader2){
-            Dsu_union(); min_cost+=c; cout<<a<<" "<<b<<" "<<c<<'\n';
+        leader1=find(a),leader2=find(b); 
+        if(leader1!=leader2){
+            Dsu_union(); min_cost+=c; 
+            cout<<a<<" "<<b<<" "<<c<<'\n';
         }
     }
     
